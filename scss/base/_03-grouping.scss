@@ -1,0 +1,55 @@
+//  =====================================================
+//  HTML Living Standard
+//  Grouping content elements
+//  https://html.spec.whatwg.org/multipage/grouping-content.html
+//  p, hr, pre, blockquote, ol, ul, menu, li, dl, dt, dd,
+//  figure, figcaption, main, div
+//  =====================================================
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+// Remove list styles on ul, ol elements with a class attribute 
+ul[class],
+ol[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+
+ul > li {
+  margin: 0 0 var(--spacing-small);
+}
+
+figure, 
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-small);
+}

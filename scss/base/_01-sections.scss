@@ -1,0 +1,113 @@
+//  =====================================================
+//  HTML Living Standard
+//  Sections elements
+//  https://html.spec.whatwg.org/multipage/sections.html
+//  body, article, section, nav, aside, hgroup, header, footer, address
+//  ======================================================
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-gap: var(--gap);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height-text);
+  margin: var(--spacing-x-large);
+  max-width: var(--max-width);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+main,
+header,
+footer,
+aside {}
+
+header[role="banner"] {
+  grid-column: 1 / -1;
+  grid-row: 1
+}
+
+
+nav[role="navigation"] ul {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: var(--spacing) 0;
+  font-family: var(--font-family-display);
+  list-style-type: none;
+}
+
+@media (min-width: 48em) {
+  nav[role="navigation"] ul {
+    font-size: var(--font-size);
+  }
+}
+
+nav[role="navigation"] li {
+  margin-right: var(--spacing);
+}
+
+nav[role="navigation"] .active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+nav[role="navigation"] a {
+  padding-block: var(--spacing-small);
+  padding-inline: var(--spacing-medium);
+  color: currentColor;
+  text-decoration: none;
+}
+
+main {
+  grid-row: 3;
+  grid-column: 1 / 1;
+}
+
+main p {
+  max-width: 75ch;
+}
+
+footer {
+  grid-row: 4;
+}
+
+// Natural flow and rhythm in articles by default 
+
+main > p + p {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+
+article > * + * {
+  margin-top: 1em;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}

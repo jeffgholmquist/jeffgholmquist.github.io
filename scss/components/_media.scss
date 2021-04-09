@@ -1,0 +1,11 @@
+.photo-tour {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--gap);
+  
+}
+
+.photo-tour figure img {
+    width: 100%;
+    object-fit: cover;
+}
