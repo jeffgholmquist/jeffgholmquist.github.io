@@ -120,8 +120,6 @@ html {
   }
 }
 body {
-  display: grid;
-  gap: var(--gap);
   color: var(--color-text);
   font-family: var(--font-family);
   font-size: var(--font-size);
@@ -135,7 +133,9 @@ body {
 
 @media (min-width: 48em) {
   body {
-    grid-template-columns: 50px 2fr 1fr;
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 10px 2fr 1fr;
   }
 }
 header[role=banner] {
