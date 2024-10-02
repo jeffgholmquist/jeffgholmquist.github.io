@@ -477,9 +477,6 @@ select {
   display: grid;
   gap: var(--grid-row-gap);
 }
-.l-research figure img {
-  border: 2px solid var(--color-black);
-}
 
 @media (min-width: 48em) {
   .l-research article {

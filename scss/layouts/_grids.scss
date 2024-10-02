@@ -29,10 +29,6 @@
 .l-research figure {
 	display: grid;
 	gap: var(--grid-row-gap);
-
-	img {
-		border: 2px solid var(--color-black);
-	}
 }
 
 @media (min-width: 48em) {
