@@ -470,7 +470,7 @@ select {
        object-fit: cover;
   }
   .photo-gallery figcaption {
-    width: 40ch;
+    max-width: 40ch;
   }
 }
 .l-research figure {
