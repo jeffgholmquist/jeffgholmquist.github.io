@@ -15,15 +15,26 @@ h6 {
   font-family: var(--font-family-display);
 }
 
+
+
 h1,
 .h1 {
   font-size: var(--font-size-display);
+  font-size: var(--font-size-xx-large);
   line-height: var(--line-height);
+}
+
+
+@media (min-width: 48em) {
+
+header[role="banner"] h1 {
+  margin-left: 2rem;
+}
 }
 
 h2,
 .h2 {
-  font-size: var(--font-size-xx-large);
+  font-size: var(--font-size-x-large);
   line-height: var(--line-height-display);
 }
 

@@ -1,7 +1,7 @@
 :root {
 
-  --font-family: 'Lora', serif;
-  --font-family-display: 'Lato', sans-serif;
+  --font-family: "Poppins", sans-serif;
+  --font-family-display: "Poppins", sans-serif;
   --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono",
@@ -26,21 +26,22 @@
   --font-weight-extra-bold: 800;
   --font-weight-black: 900;
 
-  // colors inspired by new zealand landscape
-
-  --jaguar: #03050f;
-  --blue-darker: #00527d;
-  --blue: #598eb9;
-  --blue-lighter: #8ca3b5;
-  --red: #8E4043;
+  
+  --blue: #3a4e67;
+  --red: #73444B;
   --green: #447355;
-  --purple: #af94aa;
-  --yellow: #f9f871;
-  --ecru-white: #f5f5e8;
-
-  --color-black: var(--jaguar);
-  --color-white: var(--ecru-white);
-
+  --sandy-white: #aea08d;
+  --yellow: #bda758;
+  --color-black: #15130d;
+  --color-white: #aea08d;
+  
+  --color-base: var(--sandy-white);
+  --color-background: var(--yellow);
+  --color-border: var(--green);
+  --color-text: var(--color-black);
+  --color-primary: var(--red);
+  --color-secondary: var(--yellow);
+  --color-accent: var(--green);
 
   --black: #000;
   --black-90: #1a1a1a;
@@ -55,13 +56,7 @@
   --white: #fff;
 
 
-  --color-base: var(--ecru-white);
-  --color-background: var(--ecru-white);
-  --color-border: var(--green);
-  --color-text: var(--jaguar);
-  --color-primary: var(--blue-darker);
-  --color-secondary: var(--red);
-  --color-accent: var(--purple);
+
 
   // Line height
   --line-height-text: 1.5; //150%
@@ -111,7 +106,7 @@
   --grid-compound-5-4: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
   --grid-column-gap: 2vw;
   --grid-row-gap: 4vh;
-  --gap: 1vw;
+  --gap: 2vw;
 
   // Breakpoints relative to 16px base font
   --bp-x-small: 18.75em; //300px

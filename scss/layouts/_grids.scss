@@ -1,1 +1,62 @@
 // place your grid here. use of css grid and flex box encourages. use support queries for fallbacks.
+
+
+
+@media (min-width: 48em) {
+	.photo-gallery {
+		display: grid;
+		gap: var(--gap);
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-rows: auto;
+		align-content: start;
+	}
+
+	.photo-gallery figure:first-child {
+		grid-column: span 2;
+	}
+
+	.photo-gallery img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.photo-gallery figcaption {
+		width: 40ch;
+	}
+}
+
+
+.l-research figure {
+	display: grid;
+	gap: var(--grid-row-gap);
+
+	img {
+		border: 2px solid var(--color-black);
+	}
+}
+
+@media (min-width: 48em) {
+
+	.l-research article {
+		border-bottom: .5px solid var(--color-secondary);
+		margin-bottom: 2rem;
+	}
+
+	.l-research figure {
+		grid-template-columns: 1.5fr 1fr;
+		gap: var(--gap);
+		max-width: 75ch;
+
+	}
+
+	.l-research figcaption {
+		grid-column: span 2;
+	}
+
+	.l-research figure:nth-child(3) {
+		img {
+			grid-column: span 2;
+		}
+	}
+
+}
